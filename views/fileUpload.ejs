@@ -1,0 +1,18 @@
+<!DOCTYPE html> 
+<html>   
+<head> 
+    <title>Excercise Two</title> 
+</head> 
+<body> 
+    <h1>File Upload Using Nodejs</h1> 
+   
+    <form action="/uploadFile?_method=PUT" 
+      enctype="multipart/form-data" method="POST">   
+        <span>Select Your file:</span><br>  
+        <input type="hidden" name="_method" value="PUT"> 
+        <input type="file" name="fileToUpload" required/> <br> 
+        <input type="submit" value="submit">  
+    </form> 
+</body> 
+  
+</html> 
