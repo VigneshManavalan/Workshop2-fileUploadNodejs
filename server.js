@@ -13,7 +13,9 @@ app.set("view engine","ejs")
     
 var storage = multer.diskStorage({ 
     destination: function (req, file, cb) { 
-
+        if(!fs.existsSync("files")){
+            fs.mkdirSync("files")
+        }
         cb(null, "files") 
     }, 
     filename: function (req, file, cb) { 
